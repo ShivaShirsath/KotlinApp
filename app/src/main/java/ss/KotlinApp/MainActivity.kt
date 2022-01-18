@@ -9,5 +9,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         main.text = "Shiva is Here 🤘\nYou Must Remember, Who am I. 😁"
+        main.setOnClickListener {
+            startActivity(
+                Intent(
+                    Intent.ACTION_VIEW
+                ).apply {
+                    data = Uri.parse(
+                        "https://github.com/ShivaShirsath"
+                    )
+                }
+            )
+        }
     }
 }
