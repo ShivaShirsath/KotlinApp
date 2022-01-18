@@ -7,5 +7,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        main.text = "Shiva is Here 🤘\nYou Must Remember, Who am I. 😁"
     }
 }
